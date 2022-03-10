@@ -1,15 +1,9 @@
-// libraries
 #include <iostream>
-#include <vector>
-#include <algorithm>
-
-// external functions
+extern int identity(int array[10][10]);
 using namespace std;
-extern void binaryadd(vector<int> num, vector<int> num2);
 
-// main
 int main(){
-vector <int> first = [0,0,1,0,1];
-vector <int> second = [1,1,0,1,1];
-binaryaddd(first,second);
+  int arr[10][10] = {0};
+  cout << arr << endl;
+  cout << identity(arr) << endl;
 }
