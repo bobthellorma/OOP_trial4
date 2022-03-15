@@ -1,15 +1,12 @@
-// libraries
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
-// external functions
-using namespace std;
-extern void binaryadd(vector<int> num, vector<int> num2);
+extern void printer(int array[3][10]);
+extern void print_class(std::string courses[4], std::string students[], int report_card[][4], int nstudents);
 
-// main
 int main(){
-vector <int> first = [0,0,1,0,1];
-vector <int> second = [1,1,0,1,1];
-binaryaddd(first,second);
+  std::string courses[4] = {"OOP","SNM","CLC","ADS"};
+  std::string students[2] = {"Matthew","Patrick"};
+  int report_card[][4] = {{88,73,96,64},{72,54,61,53}};
+  int nstudents = 2;
+  print_class(courses,students,report_card,nstudents);
 }
