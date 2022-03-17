@@ -1,10 +1,13 @@
+// Setup
 #include <iostream>
-#include <vector>
-
+#include <math.h>
 using namespace std;
-extern void binaryconversion(int num);
 
+// Extern function
+extern void printer(int array[10][10]);
+
+// Main function
 int main(){
-int value = 38;
-binaryconversion(value);
+  int arr[10][10] = {0};
+  printer(arr);
 }
