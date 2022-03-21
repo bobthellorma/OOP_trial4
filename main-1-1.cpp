@@ -1,10 +1,8 @@
 #include <iostream>
-#include <vector>
-
 using namespace std;
-extern void binaryconversion(int num);
 
+extern int size_of_variable_star_t() ;
 int main(){
-int value = 38;
-binaryconversion(value);
+  cout << size_of_variable_star_t();
 }
+
