@@ -1,10 +1,17 @@
 #include <iostream>
-#include <vector>
+#include <string>
+//using namespace std;
 
-using namespace std;
-extern void binaryconversion(int num);
+// function
+void copy_2d_strings(std::string first[][2], std::string second[][2], int n);
 
 int main(){
-int value = 38;
-binaryconversion(value);
-}
+  std::string first[3][2] = {
+  { "hi", "ja"},
+  {"in","lo"}, 
+  { "he", "he"}
+};
+  std::string second[3][2];
+  int n = 3;
+  copy_2d_strings(first,second,n);
+  }
