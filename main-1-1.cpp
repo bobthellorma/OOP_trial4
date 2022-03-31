@@ -1,10 +1,13 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
-extern void binaryconversion(int num);
+
+int *pad_array(int *vals, int len);
 
 int main(){
-int value = 38;
-binaryconversion(value);
+  int a[4] = {1,3,5,7};
+  int* ptr = &a[0];
+  int len = 4;
+  int*pv = pad_array(ptr,len);
+  cout << *pv;
 }
