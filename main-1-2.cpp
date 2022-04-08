@@ -1,15 +1,27 @@
-// libraries
 #include <iostream>
-#include <vector>
-#include <algorithm>
-
-// external functions
+#include <string>
+#include "person.h"
 using namespace std;
-extern void binaryadd(vector<int> num, vector<int> num2);
 
-// main
+
 int main(){
-vector <int> first = [0,0,1,0,1];
-vector <int> second = [1,1,0,1,1];
-binaryaddd(first,second);
+
+  // define 4 objects
+  person a = person("Matthew",95);
+  person b = person("John",65);
+  person c = person("Matilda",73);
+  person d = person("Wesley",110);
+
+  // change their details
+  a.setName("Elton");
+  b.setSalary(14);
+  c.setName("Worson");
+  d.setSalary(96);
+
+  // display details
+  cout << a.getName() << a.getSalary() << endl;
+  cout << b.getName() << b.getSalary() << endl;
+  cout << c.getName() << c.getSalary() << endl;
+  cout << d.getName() << d.getSalary() << endl;
 }
+
